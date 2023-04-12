@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "huggingface-olm-datasets"
+version = "0.1.0"
+description = ""
+authors = ["Hoss Kord <hkordbacheh@gmail.com>"]
+readme = "README.md"
+packages = [{include = "huggingface_olm_datasets"}]
+
+[tool.poetry.dependencies]
+python = ">3.9,<3.12"
+datasets = "2.6.1"
+emoji = "1.7.0"
+sentencepiece = "0.1.97"
+pypi-kenlm = "0.1.20220713"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
